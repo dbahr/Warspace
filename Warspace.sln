@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warspace", "Warspace\Warspace.csproj", "{2FCC3FA2-0A13-4443-BB18-0A89F4F6E9A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DB817C6E-D409-4761-BF15-EE5611D78194}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warspace.DataAccess", "Warspace.DataAccess\Warspace.DataAccess.csproj", "{891C296D-A75E-4C82-882A-74F2C4EE8B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warspace.Objects", "Warspace.Objects\Warspace.Objects.csproj", "{A8B3C12C-1CAE-4C2B-8ADF-8748C655790E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warspace.WebAPI", "Warspace.WebAPI\Warspace.WebAPI.csproj", "{DA65FE21-6CB7-4C26-B135-1AE63D1C5BC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FCC3FA2-0A13-4443-BB18-0A89F4F6E9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCC3FA2-0A13-4443-BB18-0A89F4F6E9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCC3FA2-0A13-4443-BB18-0A89F4F6E9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCC3FA2-0A13-4443-BB18-0A89F4F6E9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891C296D-A75E-4C82-882A-74F2C4EE8B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891C296D-A75E-4C82-882A-74F2C4EE8B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891C296D-A75E-4C82-882A-74F2C4EE8B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891C296D-A75E-4C82-882A-74F2C4EE8B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B3C12C-1CAE-4C2B-8ADF-8748C655790E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B3C12C-1CAE-4C2B-8ADF-8748C655790E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B3C12C-1CAE-4C2B-8ADF-8748C655790E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B3C12C-1CAE-4C2B-8ADF-8748C655790E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA65FE21-6CB7-4C26-B135-1AE63D1C5BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA65FE21-6CB7-4C26-B135-1AE63D1C5BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA65FE21-6CB7-4C26-B135-1AE63D1C5BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA65FE21-6CB7-4C26-B135-1AE63D1C5BC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

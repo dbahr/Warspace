@@ -1,0 +1,28 @@
+/// <reference path="../../../Scripts/endgate-0.2.1.d.ts" />
+/// <reference path="../../Server/IPayloadDefinitions.ts" />
+var Warspace;
+(function (Warspace) {
+    var ShipLevelManager = (function () {
+        function ShipLevelManager(payload) {
+            this.Level = payload.Level;
+            this.OnLevelChange = new eg.EventHandler1();
+            this.OnExperienceChange = new eg.EventHandler2();
+        }
+        ShipLevelManager.prototype.LoadPayload = function (payload) {
+            if (payload.Level != this.Level) {
+                this.Level = payload.Level;
+                this.OnLevelChange.Trigger(this.Level);
+            }
+        };
+        ShipLevelManager.prototype.UpdateExperience = function (experience, experienceToNextLevel) {
+            if (experience !== this.Experience || experienceToNextLevel !== this.ExperienceToNextLevel) {
+                this.Experience = experience;
+                this.ExperienceToNextLevel = experienceToNextLevel;
+                this.OnExperienceChange.Trigger(experience, experienceToNextLevel);
+            }
+        };
+        return ShipLevelManager;
+    }());
+    Warspace.ShipLevelManager = ShipLevelManager;
+})(Warspace || (Warspace = {}));
+//# sourceMappingURL=ShipLevelManager.js.map
